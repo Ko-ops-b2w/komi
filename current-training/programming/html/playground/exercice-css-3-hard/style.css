@@ -1,0 +1,35 @@
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  .center {
+    text-align: center;
+    color:rgb(252, 252, 221);
+    background: #f2c785;
+    background: linear-gradient(90deg, rgba(242, 199, 133, 1) 0%, rgba(237, 169, 59, 1) 50%, rgba(247, 146, 5, 1) 100%);
+    padding: 10px;
+}
+#line {
+    text-decoration: underline;
+}
+.trait {
+    border: 1px solid;
+    color: aquamarine;
+}
+.fonts {
+  
+    background-color: rgb(161, 189, 197);
+flex: 1 1 200px;
+padding: 15px;
+}
+
+.poppins {
+    background-color: aqua;
+    
+} 
+  
+
