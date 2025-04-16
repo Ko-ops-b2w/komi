@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice-formulaire-2-medium</title>
+    link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Créer un compte</h1>
+    <form action="">
+        <label for="prénom">Prénom</label><br>
+        <input type="text" id="prénom" name="prénom"><br>
+        <label for="nom">Nom</label><br>
+        <input type="text" id="nom" name="nom"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="mot de passe">Mot de passe</label><br>
+        <input type="text" id="mot de passe" name="mot de passe"><br>
+        <p><small> mot de passe doit contenir au moins 8 caractères, une majuscule et un chiffre</small></p>
+        <label for="date">Date de naissance</label><br>
+        <input type="text" id="date" name="date" value="jj/mm/aaaa"><br>
+        <p>Genre</p>
+        <div class="genre">
+            <input type="radio" id="homme" name="fav_language" value="Homme">
+            <label for="homme">Homme</label><br>
+            <input type="radio" id="femme" name="fav_language" value="Femme">
+            <label for="femme">Femme</label><br>
+            <input type="radio" id="autre" name="fav_language" value="Autre">
+            <label for="autre">Autre</label><br>
+        </div>
+
+        <label for="pays">Pays</label><br>
+        <input type="text" id="pays" name="pays"><br>
+        <div>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="conditions">
+            <label for="vehicle1"> J'accepte les conditions d'utilisation et la politique de confidentialité</label>
+
+        </div>
+        <section class="fin">
+            <div id="rein">
+                <button>Reinitialiser</button>
+
+            </div>
+            <div id="ins">
+                <button>S'inscrire</button>
+            </div>
+        </section>
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>

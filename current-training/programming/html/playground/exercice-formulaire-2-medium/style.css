@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    background-color: rgb(242, 248, 248);
+    width: 80%;
+    padding: 30px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.genre {
+    display: flex;
+
+}
+
+.fin {
+    display: flex;
+}
+
+#ins {
+    color: blue;
+}
