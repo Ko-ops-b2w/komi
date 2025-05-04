@@ -81,6 +81,7 @@ font-family: 'Times New Roman', Times, serif;
         grid-template-areas: "image1.jpg image2.jpg image3.jpg""image4.jpg image5.jpg image6.jpg";
         text-align: center;
         gap: 10px;
+        margin-top: 10px;
         
     }
     .image {
@@ -112,3 +113,43 @@ font-family: 'Times New Roman', Times, serif;
     .transparant {
         opacity: 0.5;
     }
+    .trait {
+        margin: 10px;
+        color: white;
+        border: 0.5px solid;
+        
+    }
+    .footer {
+        background-color: black;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .text-footer-flex {
+        display: flex;
+        gap: 70px;
+       right: 100%;
+       margin-left: 30%;
+       margin-right: 15%;
+       flex-wrap: wrap;
+       color: white;
+
+        
+        
+    }
+   .gri {
+    display: grid;
+    grid-template-columns: 33%, 33%, 33%;
+     
+    grid-template-areas:
+     "header header header"
+     "background1 background1 background1"
+     "background2 background2 background2"
+     "gallery gallery gallery"
+     "footer footer footer";
+     
+     
+     
+  }
+    
+
+   
