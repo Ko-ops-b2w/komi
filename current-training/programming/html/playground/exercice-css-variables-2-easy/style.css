@@ -70,4 +70,19 @@ h1 {
 .theme-sombre {
   --bg-color: black;
   --color: white;
+  footer {
+    background-color: rgb(44, 44, 44);
+  }
+  header {
+    background-color: black;
+  }
+  .flex-group {
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+  }
+  .block {
+    background-color: rgb(88, 88, 88);
+  }
 }
