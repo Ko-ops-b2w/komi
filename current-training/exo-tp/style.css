@@ -27,7 +27,6 @@ html {
 }
 .black {
   color: black;
-  opacity: 0.5;
 }
 
 .background {
@@ -37,7 +36,8 @@ html {
 
 .background-responsive {
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .background-hurracan {
@@ -86,14 +86,20 @@ html {
 /* DROPDOWN MENU */
 .dropdown-menu {
   display: none;
+  list-style: none;
+  color: brown;
+
   /* visibility: hidden; */
 }
-
+.header-link:hover {
+  background-color: white;
+  color: rgb(34, 145, 219);
+}
 .dropdown-button {
   /* background-color: aliceblue; */
 }
 
-.dropdown-button:before {
+.dropdown-button::after {
   content: ">";
   padding-left: var(--space-enter-elements);
 }
@@ -103,7 +109,8 @@ li:hover .dropdown-menu {
   position: absolute;
   top: 30px;
   left: 0;
-  background-color: gray;
+  padding: 10px;
+  z-index: 10000000000;
 }
 
 /* GALLERY PHOTOS */
@@ -119,6 +126,7 @@ li:hover .dropdown-menu {
   position: relative;
   padding: var(--base-space-elements);
   height: 40vh;
+  z-index: 1;
 }
 
 #img1 {
@@ -138,10 +146,6 @@ li:hover .dropdown-menu {
 }
 #img6 {
   background-image: url("./images/image6.jpg");
-}
-.img-gallery {
-  max-width: 100%;
-  max-height: 400px;
 }
 
 /* FOOTER  */
@@ -169,32 +173,33 @@ li:hover .dropdown-menu {
 
 /* OVERLAY (FOND SEMI TRANSPARENT) */
 
-.overlay::after {
+.overlay::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 
-.overlay-dark::after {
+.overlay-dark::before {
   background: rgba(0, 0, 0, 0.161);
 }
-.overlay-white::after {
-  background: rgba(255, 255, 255, 0.161);
+.overlay-white::before {
+  background: rgba(255, 255, 255, 0.541);
 }
 
 /* MENU HAMBURGER */
 
 .menu-hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: var(--space-enter-elements);
 }
 
 .menu-hamburger .trait {
-  background: black;
+  background: rgb(255, 255, 255);
   height: 2px;
   width: 40px;
 }
@@ -202,20 +207,47 @@ li:hover .dropdown-menu {
 #menu-mobile:checked ~ .nav-menu {
   display: block;
 }
+#menu-mobile {
+  display: none;
+}
 
 /* MEDIA QUERIES */
+@media screen and (992px <= width <= 1280px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-@media screen and (width <= 768px) {
+@media screen and (width <= 992px) {
   .container-header {
     justify-content: center;
-  }
-  .grid-gallery {
-    grid-template-columns: repeat(1, 1fr);
   }
   .container-footer {
     padding: var(--base-space-elements);
   }
   .nav-menu {
     display: none;
+  }
+  .menu-hamburger {
+    display: flex;
+  }
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #menu-mobile {
+    display: block;
+  }
+}
+
+@media print {
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .background-responsive {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    height: 80vh;
+    width: auto;
+    page-break-before: always;
   }
 }
