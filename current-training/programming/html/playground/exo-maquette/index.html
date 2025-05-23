@@ -11,19 +11,19 @@
     <header class="header">
       <nav class="header-nav">
         <ul class="header-nav-link">
-          <li>home</li>
-          <li>about</li>
+          <li class="nav-link">home</li>
+          <li class="nav-link">about</li>
         </ul>
-        <div><img src="image/logo_header.png" alt="" /></div>
+        <div class="logo"></div>
         <ul class="header-nav-link">
-          <li>projects</li>
-          <li>contacts</li>
+          <li class="nav-link">projects</li>
+          <li class="nav-link">contacts</li>
         </ul>
       </nav>
       <div class="header-container">
         <div class="title">
-          <h1>concert hall in</h1>
-          <h1>new york</h1>
+          <h1 class="titre">concert hall in</h1>
+          <h1 class="titre">new york</h1>
         </div>
         <div class="text">
           <p>Concert Hall is the architecture of a new generation a building</p>
@@ -32,9 +32,21 @@
         </div>
         <button class="button">look more&#129026;</button>
       </div>
+      <div class="icone">
+        <div class="minicarre">
+          <div><img class="imageicone" src="image/facebook.png" alt=""></div>
+        </div>
+        <div class="minicarre">
+          <div><img class="imageicone" src="image/social (1).png" alt=""></div>
+        </div>
+        <div class="minicarre">
+          <div><img class="imageicone" src="image/social.png" alt=""></div>
+        </div>
+
+      </div>
     </header>
     <main class="main">
-      <section class="section-one">
+      <section class="section  section-one">
         <h1 class="section-title">
           <span class="white">about</span>
           <span class="color">go.hall</span>
@@ -85,8 +97,8 @@
           </div>
         </div>
       </section>
-      <section class="section-two">
-        <h1 class="section-title">
+      <section class="section  section-two">
+        <h1 class="section-title"> 
           <span class="white">about</span>
           <span class="black">projects</span>
         </h1>
@@ -97,6 +109,7 @@
                 <span class="white">concert hall in </span>
                 <span class="color">paris</span>
               </h1>
+              
               <div><button class="button-black">janvier 2017</button></div>
             </div>
           </div>
@@ -127,7 +140,7 @@
         </div>
       </section>
 
-      <section class="section-tree">
+      <section class="section section-tree">
         <h1 class="section-title">
           <span class="white">about</span>
           <span class="color">services</span>
@@ -169,8 +182,29 @@
       </section>
     </main>
     <footer class="footer">
-      <div>
-        <div class="carre"></div>
+      <div class="footer-flex">
+        <div class="carre">
+          <div class="title3footer">
+            <h1>resquest</h1>
+            <h1>a call back</h1>
+          </div>
+        </div>
+        <div class="blackcarre">
+          <div class="gridfooter">
+        <div>
+          <form action="/submit-form" method="post">
+            <label class="textlabel" for="nom">Name*</label requied>
+            <input class="largeur-element" type="text" id="nom" name="nom" placeholder="">
+            <label class="textlabel" for="nom">E-mail*</label requied>
+            <input class="largeur-element" type="text" id="email" name="email" placeholder="">
+            <label class="textlabel" for="nom">Message*</label requied>
+            <input class="largeur-element" type="text" id="message" name="message" placeholder="">
+        </div>
+        <div>
+        <button class="button">envoyer</button>
+        </div>
+        </div>
+        </div>
       </div>
     </footer>
   </body>

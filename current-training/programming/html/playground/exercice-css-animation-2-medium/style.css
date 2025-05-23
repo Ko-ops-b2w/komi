@@ -38,6 +38,9 @@ p {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 }
+.title {
+  font-size: x-large;
+}
 
 .button {
   color: white;
