@@ -50,3 +50,30 @@ let compte = {
 };
 console.log(compte)
 console.log(compte.solde += 500);
+
+
+
+ //Affichez les nombres pairs de 1 à 20 //
+
+for (let paire = 1; paire <= 20; paire = paire + 1) {
+if (paire % 2 === 0) {
+    console.log(paire);
+}
+}
+
+const button = document.getElementsByClassName('button')
+console.log(button[0])
+
+
+button[0].addEventListener("click", () => {
+    button[0].style.backgroundColor = "red"
+})
+
+const header = document.getElementById("titre")
+console.log(header)
+
+header.addEventListener("click", () => {
+    header.style.color = "black"
+     header.style.backgroundColor = "gray"
+      header.style.textTransform = "uppercase"
+})
